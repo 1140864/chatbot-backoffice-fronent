@@ -61,10 +61,10 @@ export default class ViewResponses extends React.Component {
                     <h3> This Intent has no responses, please add a new one. </h3>
 
                     <ButtonGroup>
-                        <LinkContainer key={'intent'} to='/Intent'>
+                        <LinkContainer key={'intent'} to={`${Config.gitHubPages}/Intent`}>
                             <Button bsStyle="primary">Back</Button>
                         </LinkContainer>
-                        <LinkContainer key={'new'} to={`/Intent/${this.props.intent}#create`}>
+                        <LinkContainer key={'new'} to={`${Config.gitHubPages}/Intent${this.props.intent}#create`}>
                             <Button bsStyle="primary" onClick={this.clickHandler.bind(this, {}, 'create')}>Add New</Button>
                         </LinkContainer>
                     </ButtonGroup>
