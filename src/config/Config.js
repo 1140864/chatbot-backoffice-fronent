@@ -1,7 +1,7 @@
 
 
 const Config = {
-    backOfficeUrl: 'http://localhost:8060/'
+    backOfficeUrl: 'https://vd-chatbot-backoffice-be.herokuapp.com'
 };
 
 export default Config
