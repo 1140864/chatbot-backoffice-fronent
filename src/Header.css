@@ -1,0 +1,21 @@
+.Logo {
+    float: left;
+    animation: App-logo-spin infinite 30s linear;
+    height: 50px;
+}
+
+.Header {
+    font-family: Arial, Verdana, Tahoma, Helvetica;
+    text-align: center;
+    background-color: #ed0726;
+    height: 60px;
+    padding: 5px;
+    clear: right;
+    border-bottom: 1px solid black;
+    color: white;
+}
+
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

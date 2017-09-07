@@ -1,0 +1,12 @@
+.right-btn{
+    display:inline-block;
+    float: right;
+}
+
+.txtOverflow{
+    display: inline-block;
+    width: 60%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
