@@ -42,11 +42,11 @@ export default class ViewResponses extends React.Component {
                         {item.text}
                     </span>
                     <ButtonGroup className="right-btn">
-                        <LinkContainer to={`/Intent/${item.intent}#update`}>
+                        <LinkContainer to={`${Config.gitHubPages}/Intent/${item.intent}#update`}>
                             <Button bsStyle="info" bsSize="xsmall"
                                     onClick={this.clickHandler.bind(this, item, 'update')}>Edit</Button>
                         </LinkContainer>
-                        <LinkContainer to={`/Intent/${item.intent}#delet`}>
+                        <LinkContainer to={`${Config.gitHubPages}/Intent/${item.intent}#delet`}>
                             <Button bsStyle="danger" bsSize="xsmall" onClick={this.clickHandler.bind(this, item, 'delete')}>Delete</Button>
                         </LinkContainer>
                     </ButtonGroup>
@@ -80,10 +80,10 @@ export default class ViewResponses extends React.Component {
                 </ListGroup>
 
                 <ButtonGroup>
-                    <LinkContainer key={'intent'} to='/Intent/'>
+                    <LinkContainer key={'intent'} to={`${Config.gitHubPages}/Intent`}>
                         <Button bsStyle="primary">Back</Button>
                     </LinkContainer>
-                    <LinkContainer key={'new'} to={`/Intent/${this.props.intent}#new`}>
+                    <LinkContainer key={'new'} to={`${Config.gitHubPages}/Intent${this.props.intent}#new`}>
                         <Button bsStyle="primary" onClick={this.clickHandler.bind(this, {}, 'create')}>Add New</Button>
                     </LinkContainer>
                 </ButtonGroup>
