@@ -31,7 +31,7 @@ export default class NewResponse extends React.Component {
 
         ApiRequests.post(
             this.handleResponse,
-            Config.backOfficeUrl + '/api/response',
+            Config.responseUrl,
             { intent: this.props.intent, text: this.state.description }
         );
     }

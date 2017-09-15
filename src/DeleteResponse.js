@@ -19,7 +19,7 @@ export default class DeleteResponse extends React.Component {
 
         ApiRequests.delete(
             this.handleResponse,
-            Config.backOfficeUrl + '/api/response/' + this.props.id,
+            Config.responseUrl + this.props.id,
             {intent: this.props.intent,text: this.state.description} );
     }
 

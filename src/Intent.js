@@ -16,7 +16,7 @@ export default class Intent extends React.Component {
 
     componentWillMount() {
         var self = this;
-        axios.get(Config.backOfficeUrl + '/api/intents')
+        axios.get(Config.intentUrl)
             .then(function (response) {
                 self.setState({data: response.data});
             })

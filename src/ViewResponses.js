@@ -20,7 +20,7 @@ export default class ViewResponses extends React.Component {
 
         ApiRequests.get(
             this.handleResponse,
-            Config.backOfficeUrl + '/api/response/i/'+this.props.intent);
+            Config.responseByIntentNameUrl + this.props.intent);
 
     }
 

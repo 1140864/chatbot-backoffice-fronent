@@ -1,7 +1,9 @@
 
 
 const Config = {
-    backOfficeUrl: 'https://vd-chatbot-backoffice-be.herokuapp.com',
+    intentUrl: 'https://vd-chatbot-backoffice-be.herokuapp.com/api/intents/',
+    responseByIntentNameUrl: 'https://vd-chatbot-backoffice-be.herokuapp.com/api/response?intent=',
+    responseUrl: 'https://vd-chatbot-backoffice-be.herokuapp.com/api/response/',
     gitHubPages: '/chatbot-backoffice-frontend'
 };
 

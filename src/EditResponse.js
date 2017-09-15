@@ -24,7 +24,7 @@ export default class EditResponse extends React.Component {
 
         ApiRequests.put(
             this.handleRequest,
-            Config.backOfficeUrl + '/api/response',
+            Config.responseUrl,
             {
                 id: this.props.id,
                 intent: this.props.intent,
