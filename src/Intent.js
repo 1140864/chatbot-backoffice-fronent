@@ -36,6 +36,7 @@ export default class Intent extends React.Component {
         );
 
         const list = this.state.data.map((item, i) => {
+            console.log(item.name);
             return ( <LinkContainer key={i} to={`${Config.gitHubPages}/Intent/${item.name}`}>
                 <ListGroupItem>{item.name}</ListGroupItem>
             </LinkContainer> );
