@@ -81,7 +81,7 @@ export default class NewResponse extends React.Component {
                         <ControlLabel>Description</ControlLabel>
                         <FormControl componentClass="textarea"
                                      onChange={this.textChangeHandler.bind(this)}
-                                     placeholder="textarea"
+                                     placeholder="Insert the response here"
                                      value={this.state.description}
                         />
                     </FormGroup>

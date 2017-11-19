@@ -47,14 +47,14 @@ export default class EditResponse extends React.Component {
         return (
             <Col md={12} mdPush={0}>
 
-                <h2> New Response for "{this.props.intent}" intent</h2>
+                <h2> Edit Response for "{this.props.intent}" intent</h2>
 
                 <form>
                     <FormGroup controlId="formControlsTextarea">
                         <ControlLabel>Description</ControlLabel>
                         <FormControl componentClass="textarea"
                                      onChange={this.textChangeHandler.bind(this)}
-                                     placeholder="textarea"
+                                     placeholder="Insert the response here"
                                      value={this.state.description}
 
                         />
